@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 370px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+/* header#header 시작 */
+header#header {
+/* 	border: 1px solid #000; */
+	justify-content: space-between;
+	align-items: center;
+}
+header#header h1 {
+	font-size: 22px;
+}
+header#header nav#gnb {
+	width: 200px;
+}
+#header #gnb ul#mainMenu li {
+	text-align: center;
+	border: 1px solid #000;
+	flex: 1;
+}
+#header #gnb ul#mainMenu li:first-child {
+	border-right: none;
+}
+#header #gnb ul#mainMenu li a {
+	font-size: 18px;
+	padding: 3px 10px;
+	display: inline-block;
+}
+#header #gnb ul#mainMenu li:hover a{
+	text-decoration: underline;
+} 
+/* header#header 끝 */
+
+/* main#main 시작 */
+main#main {
+	margin: 15px 0;
+}
+main#main div.insItem {
+	margin: 4px 0;
+}
+main#main label {
+	line-height: 26px;
+}
+main#main div.colWidth label>span {
+	width: 140px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 6px 15px;
+	margin-right: 15px;
+	background-color: rgba(0, 136, 255, 0.2);
+}
+
+main#main label>span+input {
+	width: 180px;
+	font-size: 18px;
+	padding: 0 10px;
+}
+#main span.required::before {
+	content: " * ";
+	font-size: 18px;
+	font-weight: bold;
+	
+} 
+
+#main div#btnArea {
+	margin: 10px;
+}
+#main div#btnArea button {
+	width: 100px;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 6px;
+	margin: 0 6px;
+	cursor: pointer;
+}
+#main div#btnArea span {
+	margin-right: 30px;
+}
+/* main#main 끝 */
+
+
+
+/* div#wrap.listWrap 상품목록 시작 */
+div#wrap.listWrap {
+	width: 650px;
+}
+div#wrap.listWrap h1 {
+	/*border: 1px solid #000;*/
+	margin-left: 60px;
+}
+#wrap.listWrap main#main div#colHeaderRow {
+	line-height: 40px;
+	background-color: rgba(0, 136, 255, 0.2);
+}
+#wrap.listWrap main#main div.dataRow {
+	line-height: 35px;
+	border-bottom: 1px solid #aaa;
+}
+#wrap.listWrap main#main div.dataRow:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+#wrap.listWrap main#main div.colWidth input[type=checkbox] {
+	width: 18px;
+	height: 18px;
+}
+#wrap.listWrap main#main div.colWidth {
+	user-select: none;
+}
+#wrap.listWrap main#main div.colWidth span {
+	text-align: center;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(1){
+	width: 40px;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(2){
+	width: 60px;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(3){
+	flex: 1;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(4){
+	width: 90px;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(5){
+	width: 90px;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(6){
+	width: 70px;
+}
+#wrap.listWrap main#main div.colWidth span:nth-child(7){
+	width: 120px;
+}
+
+div#listFuncArea {
+	margin: 15px;
+	justify-content: space-between;
+}
+div#listFuncArea button {
+	width: 100px;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 6px;
+	margin: 0 6px;
+	cursor: pointer;
+}
+div#listFuncArea span {
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+div#listFuncArea input#searchWord {
+	width: 150px;
+	font-size: 17px;
+	padding: 4px 2px 5px 8px;
+}
+/* div#wrap.listWrap 상품목록 끝 */
+
+
+
+
